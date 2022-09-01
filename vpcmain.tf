@@ -15,7 +15,7 @@ resource "aws_internet_gateway" "web_gw" {
 resource "aws_subnet" "web_subnet" {
   vpc_id     = aws_vpc.web_vpc.id
   cidr_block = var.var_subnet_cidr #"10.0.1.0/24"
-  availability_zone = var.var_available_zone #"us-west-2a"
+  #availability_zone = var.var_available_zone #"us-west-2a"
 
   tags = {
     Name = "web_subnet"
